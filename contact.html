@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6d6f5;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .navbar .logo {
+            width: 150px;
+            transform: translateX(140px);
+        }
+
+        .custom-navbar {
+            background-color: #1E1E1E;
+        }
+
+        .navbar .School1 {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 65px;
+            transform: translateX(-55px);
+        }
+
+        .nav-itema {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        .nav-itemb {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar" role="navigation" aria-label="Main navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="about.html">About</a>
+            </li>
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="camps.html">Camps</a>
+            </li>
+        </ul>
+        <a class="navbar-brand d-flex align-items-center mx-auto" href="#" aria-label="School of Ball Home">
+            <img src="logo.png" alt="School of Ball Logo" class="logo">
+            <span class="School1">School of Ball</span>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="community.html">Community</a>
+            </li>
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content" role="main" class="container">
+        <h1 class="text-center mt-5" id="contact-us">Contact Us</h1>
+        <div class="language-switcher">
+            <button class="btn btn-secondary" id="switch-to-french" aria-label="Switch to French">Switch to French</button>
+            <button class="btn btn-secondary" id="switch-to-english" aria-label="Switch to English" style="display: none;">Switch to English</button>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <section class="contact-info" aria-labelledby="contact-info-title">
+                    <h2 id="contact-info-title">Contact Information</h2>
+                    <p id="location"><strong>Location:</strong> 1234 City Road, Ottawa, Ontario, K6V 7D4</p>
+                    <p id="operating-season"><strong>Operating Season:</strong> May - August</p>
+                    <p id="phone-number"><strong>Phone Number:</strong> (123) 456-7890</p>
+                    <p id="email"><strong>Email:</strong> <a href="mailto:schoolofball@outlook.com">schoolofball@outlook.com</a></p>
+                    <p id="office-hours"><strong>Clubhouse Office Hours:</strong> Monday - Friday, 9 AM - 5 PM</p>
+                    <p id="social-media"><strong>Social Media:</strong>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> |
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+                    </p>
+                </section>
+                <section class="mt-5" aria-labelledby="send-message-title">
+                    <h2 id="send-message-title">Send Us a Message</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" id="message-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-button" aria-label="Submit your message">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const switchToFrenchBtn = document.getElementById('switch-to-french');
+            const switchToEnglishBtn = document.getElementById('switch-to-english');
+            
+            switchToFrenchBtn.addEventListener('click', function() {
+                document.getElementById('contact-us').innerText = 'Contactez Nous';
+                document.getElementById('contact-info-title').innerText = 'Informations de Contact';
+                document.getElementById('location').innerHTML = '<strong>Emplacement:</strong> 1234 City Road, Ottawa, Ontario, K6V 7D4';
+                document.getElementById('operating-season').innerHTML = '<strong>Saison d\'exploitation:</strong> Mai - Août';
+                document.getElementById('phone-number').innerHTML = '<strong>Numéro de téléphone:</strong> (123) 456-7890';
+                document.getElementById('email').innerHTML = '<strong>Email:</strong> <a href="mailto:schoolofball@outlook.com">schoolofball@outlook.com</a>';
+                document.getElementById('office-hours').innerHTML = '<strong>Heures de bureau:</strong> Lundi - Vendredi, 9h - 17h';
+                document.getElementById('social-media').innerHTML = '<strong>Médias sociaux:</strong> <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> | <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> | <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>';
+                document.getElementById('send-message-title').innerText = 'Envoyez-nous un message';
+                document.getElementById('name-label').innerText = 'Nom';
+                document.getElementById('email-label').innerText = 'Email';
+                document.getElementById('message-label').innerText = 'Message';
+                document.getElementById('submit-button').innerText = 'Soumettre';
+
+                switchToFrenchBtn.style.display = 'none';
+                switchToEnglishBtn.style.display = 'inline';
+            });
+
+            switchToEnglishBtn.addEventListener('click', function() {
+                document.getElementById('contact-us').innerText = 'Contact Us';
+                document.getElementById('contact-info-title').innerText = 'Contact Information';
+                document.getElementById('location').innerHTML = '<strong>Location:</strong> 1234 City Road, Ottawa, Ontario, K6V 7D4';
+                document.getElementById('operating-season').innerHTML = '<strong>Operating Season:</strong> May - August';
+                document.getElementById('phone-number').innerHTML = '<strong>Phone Number:</strong> (123) 456-7890';
+                document.getElementById('email').innerHTML = '<strong>Email:</strong> <a href="mailto:schoolofball@outlook.com">schoolofball@outlook.com</a>';
+                document.getElementById('office-hours').innerHTML = '<strong>Clubhouse Office Hours:</strong> Monday - Friday, 9 AM - 5 PM';
+                document.getElementById('social-media').innerHTML = '<strong>Social Media:</strong> <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a> | <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a> | <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>';
+                document.getElementById('send-message-title').innerText = 'Send Us a Message';
+                document.getElementById('name-label').innerText = 'Name';
+                document.getElementById('email-label').innerText = 'Email';
+                document.getElementById('message-label').innerText = 'Message';
+                document.getElementById('submit-button').innerText = 'Submit';
+
+                switchToFrenchBtn.style.display = 'inline';
+                switchToEnglishBtn.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

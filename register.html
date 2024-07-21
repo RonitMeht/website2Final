@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #d6d6f5;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+        
+        .navbar .logo {
+            width: 150px;
+            transform: translateX(140px);
+            
+        }
+        .custom-navbar {
+            background-color: #1E1E1E;
+        }
+        .navbar .School1 {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 65px;
+            transform: translateX(-55px);
+        }
+        
+        .nav-itema{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        
+        .nav-itemb{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+        
+        .nav-link{
+            color: white;
+        }
+        .header {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .header .logoleft {
+            position: absolute;
+            left: 65px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header .logoright {
+            position: absolute;
+            left: 180px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+        }
+        .header .phone-number {
+            display: inline-block;
+            font-size: 18px;
+            transform: translateX(+280%);
+        }
+        .header .btn {
+            position: absolute;
+            transform: translateX(+380%);
+            top: 14px;
+            color: black;
+        }
+        .header .btn:hover{
+            text-decoration: none;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #867dc1;
+            border-radius: 10px;
+            border: 2px solid #0000ff;
+        }
+        .form-group label {
+            color: white;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="about.html">About</a>
+            </li>
+            <li class="nav-itema">
+                <a class="nav-link font-weight-bold" href="camps.html">Camps</a>
+            </li>
+        </ul>
+        <a class="navbar-brand d-flex align-items-center mx-auto" >
+            <img src="logo.png" alt="School of Ball" class="logo"> 
+            <span class="School1">School of Ball</span>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="community.html">Community</a>
+            </li>
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-itemb">
+                <a class="nav-link font-weight-bold" href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Book Your Camp Today</h2>
+        <form id="appointmentForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number *</label>
+                <input type="tel" class="form-control" id="phoneNumber" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="service">Type of Camp *</label>
+                    <select id="service" class="form-control" required>
+                        <option selected>Quarterback Camp</option>
+                        <option>Wide Receiver Camp</option>
+                        <option>Defensive Back Camp</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="date">Select a Date for your Camp *</label>
+                    <select id="date" class="form-control" required>
+                        <option selected>May 3-8</option>
+                        <option>May 10-15</option>
+                        <option>May 23-28</option>
+                        <option>June 2-7</option>
+                        <option>June 11-16</option>
+                        <option>June 20-25</option>
+                        <option>July 2-7</option>
+                        <option>July 13-18</option>
+                        <option>July 24-29</option>
+                        <option>August 3-8</option>
+                        <option>August 11-16</option>
+                        <option>August 20-25</option>
+                    </select>
+                </div>
+            </div>
+                
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">School of Ball</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank you! You have succsessfully booked your Camp
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirmSubmit">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            $('#confirmationModal').modal('show'); // Show the custom confirmation modal
+        });
+
+        document.getElementById('confirmSubmit').addEventListener('click', function() {
+            $('#confirmationModal').modal('hide'); // Hide the confirmation modal
+            document.getElementById('appointmentForm').submit(); // Submit the form
+        });
+    </script>
+</body>
+</html>

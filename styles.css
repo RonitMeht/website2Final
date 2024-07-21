@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6d6f5;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.navbar .logo {
+    width: 150px;
+    transform: translateX(140px);
+    
+}
+.custom-navbar {
+    background-color: #1E1E1E;
+}
+.navbar .School1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 65px;
+    transform: translateX(-55px);
+}
+
+.nav-itema{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.nav-itemb{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.nav-link{
+    color: white;
+}
+
+main {
+    margin-top: 50px;
+  }
+  
+main h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+ 
+main p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+  
+main button {
+    font-size: 1.2em;
+}
+
+.container .camp{
+    width: 100%;
+}
